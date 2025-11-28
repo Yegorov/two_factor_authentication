@@ -22,7 +22,7 @@
 
 In a Rails environment, require the gem in your Gemfile:
 
-    gem 'two_factor_authentication'
+    gem 'two_factor_authentication', github: 'Yegorov/two_factor_authentication', branch: 'rails'
 
 Once that's done, run:
 
@@ -400,5 +400,19 @@ to set TOTP to DISABLED for a user account:
    current_user.totp_enabled? => false
    ```
    
+### Setup and run rspec
 
+```
+rvm use 2.7.2
+gem list bundler
+gem uninstall bundler -v 2.5.11
+bundle _2.4.22_ install
+
+cd spec/rails_app
+RAILS_ENV=test rake db:drop
+RAILS_ENV=test rake db:create
+RAILS_ENV=test rake db:migrate
+
+bundle exec rspec
+```
 
