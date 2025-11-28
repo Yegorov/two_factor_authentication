@@ -5,6 +5,9 @@
 [![Build Status](https://travis-ci.org/Houdini/two_factor_authentication.svg?branch=master)](https://travis-ci.org/Houdini/two_factor_authentication)
 [![Code Climate](https://codeclimate.com/github/Houdini/two_factor_authentication.svg)](https://codeclimate.com/github/Houdini/two_factor_authentication)
 
+> [!IMPORTANT]
+> See [`rails` branch](https://github.com/Yegorov/two_factor_authentication/tree/rails)
+
 ## Features
 
 * Support for 2 types of OTP codes
