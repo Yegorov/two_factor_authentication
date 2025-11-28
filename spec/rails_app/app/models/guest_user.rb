@@ -13,5 +13,9 @@ class GuestUser
     end
   end
 
+  def update(attrs)
+    update_attributes(attrs)
+  end
+
   has_one_time_password
 end

@@ -108,7 +108,7 @@ automatically called when a user logs in unless they have TOTP enabled (see
 below):
 
 ```ruby
-def send_two_factor_authentication_code(code)
+def send_two_factor_authentication_code(code, options: {})
   # Send code via SMS, etc.
 end
 ```

@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   has_one_time_password
 
-  def send_two_factor_authentication_code(code)
+  def send_two_factor_authentication_code(code, options: {})
     SMSProvider.send_message(to: phone_number, body: code)
   end
 
